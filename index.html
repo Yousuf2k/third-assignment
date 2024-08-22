@@ -1,12 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="./src/output.css" />
   </head>
   <body>
-    <header><h1>Hello</h1></header>
+    <header class="bg-[#F5F5F5] overflow-hidden">
+      <section
+        class="container w-11/12 xl:w-4/5 mx-auto lg:mb-20 sm:mb-16 mb-11"
+      >
+        <div class="navbar">
+          <div class="navbar-start lg:w-1/4">
+            <span class="bg-lime-400 rounded-full p-2"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </span>
+            <a class="text-2xl font-bold p-0">Rinterio</a>
+          </div>
+          <div class="navbar-center hidden lg:flex lg:justify-start">
+            <ul class="menu menu-horizontal px-1 text-base font-semibold">
+              <li><a>Home</a></li>
+              <li><a>Service</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <ul class="w-full flex items-center justify-end">
+              <li class="bg-white rounded-full p-2 hidden md:flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+              </li>
+              <li class="bg-white rounded-full p-2 ml-2 hidden md:flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                  />
+                </svg>
+              </li>
+              <li class="ml-2 hidden md:flex">
+                <a
+                  class="btn rounded-full bg-lime-400 text-base font-bold w-44 h-14"
+                  >Book Consult<span class="bg-black rounded-full p-2"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="white"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg> </span
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="p-2 bg-white rounded-full ml-2 lg:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center text-center 2xl:w-4/5 mx-auto 2xl:p-10 lg:px-0 lg:w-11/12"
+        >
+          <div>
+            <img src="./images/banner.png" alt="" />
+          </div>
+          <div class="w-full">
+            <h1
+              class="text-4xl lg:text-6xl font-black mt-2 leading-tight md:text-4xl"
+            >
+              A barn house of this design has a striking appearance
+            </h1>
+            <p class="text-lg font-medium md:my-8 my-2">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents, and large windows that flood the space with natural light
+            </p>
+            <button class="w-full">
+              <a
+                class="btn rounded-full w-full border-1 border-lime-400 md:w-44 md:h-14 bg-lime-200 text-base font-bold"
+                >Video Details<span class="bg-lime-400 rounded-full p-2"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="black"
+                    class="size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg> </span
+              ></a>
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="overflow-hidden bg-stone-200">
+      <section class="container mx-auto w-11/12 xl:w-4/5">
+        <div class="grid grid-cols-2 lg:mt-24">
+          <div>hello</div>
+          <div></div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
