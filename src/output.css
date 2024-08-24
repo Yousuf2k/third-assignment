@@ -1902,7 +1902,7 @@ html {
 }
 
 .bg-bg_img {
-  background-image: url('/images/bg.jpg');
+  background-image: url('../images/bg.jpg');
 }
 
 .bg-cover {
